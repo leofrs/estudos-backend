@@ -1,0 +1,11 @@
+Como montar um servidor
+Como montar um rota
+Como inserir dados no banco
+Como buscar dados do banco
+
+Refatorar o código e deixar ele mais robusto?
+ - Pode-se ser feito a inrodução de classes e organzização de codigo onde cada coisa tem seu lugar
+
+Próximo = Middleware
+
+login = Middleware = ir no banco

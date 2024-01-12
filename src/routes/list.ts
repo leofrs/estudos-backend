@@ -1,8 +1,10 @@
-import { Request, Response, Router } from "express";
-import { user } from "../../data";
+import { Router } from "express";
+
+import { usuario1 } from "../controllers/userController";
+import { products } from "../controllers/products";
 export const routeList = Router();
 
-routeList.get("/list", (req: Request, res: Response) => {
-  const usuarios = user;
-  res.send(usuarios);
-});
+const userGet = new usuario1();
+const products1 = new products();
+
+routeList.get("/list", userGet.get);
